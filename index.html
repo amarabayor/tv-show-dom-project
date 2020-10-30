@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amara Bayor(amarabayor)</title>
-    <link href="style.css" rel="stylesheet" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <div id="root">
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TV Show Project | My Name (Amara Bay)</title>
+  <div class="justify-start sm:justify-center md:justify-end lg:justify-between xl:justify-around"></div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+</head>
 
-    <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
-    <script src="episodes.js"></script>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">TV SHow</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Loads YOUR javascript code -->
-    <script src="script.js"></script>
-  </body>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" id="searchField" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+
+      <span class="nav-link disabled" id="searchDescription" tabindex="-1" aria-disabled="true"></span>
+
+
+    </nav>
+
+
+  </div>
+
+  <div id="root" class="d-flex flex-wrap"></div>
+
+
+  <div class="footer bg-dark text-light p-2">
+  <a href="https://tvmaze.com/">TVMaze.com</a>
+  </div>
+
+
+  <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
+  <script src="episodes.js"></script>
+
+  <!-- Loads YOUR javascript code -->
+  <script src="script.js"></script>
+</body>
+
 </html>
